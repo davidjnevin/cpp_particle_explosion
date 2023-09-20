@@ -43,3 +43,4 @@ Build/
 /CppProperties.json
 arrays.plist
 defaults.cfg
+compile_commands.json
