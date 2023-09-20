@@ -12,7 +12,7 @@ include_directories(include)
 include_directories(${SDL2_INCLUDE_DIRS})
 
 # Add the executables
-add_executable(App main.cpp)
+add_executable(App main.cpp include/Screen.cpp)
 
 # Librarie
 target_link_libraries(App ${SDL2_LIBRARIES})
