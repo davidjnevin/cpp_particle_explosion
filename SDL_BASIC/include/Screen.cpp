@@ -62,7 +62,15 @@ bool Screen::init() {
   return true;
 }
 
-bool Screen::processEvents() { return false; }
+bool Screen::processEvents() {
+  SDL_Event m_event;
+  while (SDL_PollEvent(&m_event) != 0) {
+    if (m_event.type == SDL_QUIT) {
+      return false;
+    }
+  }
+  return true;
+}
 
 void Screen::close() {
   delete[] m_buffer;

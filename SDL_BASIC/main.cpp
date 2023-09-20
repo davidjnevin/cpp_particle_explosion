@@ -22,10 +22,9 @@ int main() {
     // Update particles
     // Draw particles
     // Check for messages/events
-    while (SDL_PollEvent(&event) != 0) {
-      if (event.type == SDL_QUIT) {
-        quit = true;
-      }
+
+    if (screen.processEvents() == false) {
+      quit = true;
     }
   }
 
