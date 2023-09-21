@@ -44,7 +44,7 @@ int main() {
     double blue_speed = 0.0003;
     unsigned char blue = (unsigned char)(sin(elapsed * blue_speed) * 128 + 128);
 
-    const Particle* const pParticles = swarm.getParticles();
+    const Particle *const pParticles = swarm.getParticles();
     for (int i = 0; i < Swarm::NPARTICLES; i++) {
       Particle particle = pParticles[i];
 

@@ -11,6 +11,10 @@ class Particle {
   double m_x;
   double m_y;
 
+  // Velocity
+  double m_xspeed;
+  double m_yspeed;
+
  public:
   Particle();
   virtual ~Particle();
