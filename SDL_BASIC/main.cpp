@@ -25,8 +25,12 @@ int main() {
 
   // Game loop
   while (!quit) {
+    // Clear the screen
+    screen.clear();
     // Update particles
+
     // Draw particles
+    swarm.update();
 
     int elapsed = SDL_GetTicks();
 

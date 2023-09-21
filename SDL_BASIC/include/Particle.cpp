@@ -12,4 +12,11 @@ Particle::Particle() {
 
 Particle::~Particle(){};
 
+void Particle::update() {
+  // A range of -1 to 1
+  const double speed = 0.01;
+  m_x += 0.01;
+  m_y += 0.01;
+};
+
 } /* namespace davidjnevin */

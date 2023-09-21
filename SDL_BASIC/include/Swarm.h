@@ -15,6 +15,7 @@ class Swarm {
   virtual ~Swarm();
 
   const Particle* const getParticles() { return m_pParticles; };
+  void update();
 };
 
 } /* namespace davidjnevin */
