@@ -77,6 +77,10 @@ void Screen::update() {
 }
 
 void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
+  // Check if the pixel is within the screen
+  // If it is not, do not set the pixel
+  // This is a simple way to avoid a segmentation fault
+  // This is inefficient, but it is a good way to start
   if (x < 0 || x >= SCREEN_WIDTH || y < 0 || y >= SCREEN_HEIGHT) {
     return;
   }
