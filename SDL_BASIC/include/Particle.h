@@ -12,8 +12,9 @@ class Particle {
   double m_y;
 
   // Velocity
-  double m_xspeed;
-  double m_yspeed;
+  double m_speed;
+  // Direction
+  double m_direction;
 
  public:
   Particle();
