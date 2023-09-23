@@ -30,9 +30,8 @@ int main() {
     // Update particles
 
     // Draw particles
-    swarm.update();
-
     int elapsed = SDL_GetTicks();
+    swarm.update(elapsed);
 
     double green_speed = 0.0001;
     unsigned char green =
