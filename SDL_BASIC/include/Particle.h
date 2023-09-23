@@ -20,6 +20,9 @@ class Particle {
   Particle();
   virtual ~Particle();
   void update(int interval);
+
+ private:
+  void init();
 };
 
 } /* namespace davidjnevin */

@@ -14,7 +14,7 @@ bool Screen::init() {
     printf("SDL_Init Error: %s\n", SDL_GetError());
     return false;
   }
-  m_window = SDL_CreateWindow("Hello World!", SDL_WINDOWPOS_UNDEFINED,
+  m_window = SDL_CreateWindow("David J Nevin", SDL_WINDOWPOS_UNDEFINED,
                               SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH,
                               SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
   if (m_window == NULL) {
