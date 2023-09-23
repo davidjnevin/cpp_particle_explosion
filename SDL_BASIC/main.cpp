@@ -25,8 +25,6 @@ int main() {
 
   // Game loop
   while (!quit) {
-    // Clear the screen
-    screen.clear();
     // Update particles
 
     // Draw particles
@@ -57,6 +55,8 @@ int main() {
 
       screen.setPixel(x, y, red, green, blue);
     }
+    // Apply burr
+    screen.boxBlur();
 
     // Draw the screen
     screen.update();

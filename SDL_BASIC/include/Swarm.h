@@ -5,7 +5,7 @@ namespace davidjnevin {
 
 class Swarm {
  public:
-  const static int NPARTICLES = 5000;
+  const static int NPARTICLES = 2000;
 
  private:
   Particle* m_pParticles;

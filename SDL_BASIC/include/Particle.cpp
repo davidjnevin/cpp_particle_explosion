@@ -1,8 +1,7 @@
 #include "Particle.h"
 
+#include <math.h>
 #include <stdlib.h>
-
-#include <cmath>
 
 namespace davidjnevin {
 
