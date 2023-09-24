@@ -2,6 +2,8 @@
 
 This program is a simple particle simulation using the SDL2 library. It initializes a screen using SDL, creates a swarm of particles, and updates their positions and colors in a game loop until the user decides to quit.
 
+![Particle Swarm](./particle-swarm.gif)
+
 ## Prerequisites
 
 - A C++ compiler supporting C++11 or later.
